@@ -2,23 +2,33 @@
 // create a DFA that accepts strings that contain the substring 00
 
 int main(){
-    char str[100];
-    printf("Enter a string: ");
-    scanf("%s", str);
-    int state = 0;
-    for(int i = 0; str[i] != '\0'; i++){
-        if(state == 0 && str[i] == '0'){
-            state = 1;
-        }
-        else if(state == 1 && str[i] == '0'){
-            state = 2;
-        }
+  // accept the sttring that contain 00 as a substring together wiith no other character in the middle of  00
+  char str[100];
+  printf("Enter the string: ");
+  scanf("%s", str);
+  int state = 0;
+  int i = 0;
+  while(str[i] != '\0'){
+    if(state == 0 && str[i] == '0'){
+      state = 1;
     }
-    if(state == 2){
-        printf("Accepted\n");
+    else if(state == 1 && str[i] == '0'){
+      state = 2;
+    }
+    else if(state == 2 && str[i] == '0'){
+      state = 2;
     }
     else{
-        printf("Not Accepted\n");
+      state = 0;
     }
-    return 0;
+    i++;
+  }
+  if(state == 2){
+    printf("Accepted\n");
+  }
+  else{
+    printf("Not Accepted\n");
+  }
+  return 0;
+
 }
