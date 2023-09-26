@@ -25,14 +25,18 @@ void main(){
       break;
 
     case 2:
+      if (str[i] == '0') state = 2;
+      else state = 0;
       break;
     }
 
-    if (state == 2) {
-      printf("String accepted\n");
-      return;
-    }
+    
     
   }
-  printf("String not accepted\n");
+  if (state == 2) {
+      printf("String accepted\n");
+      return;
+    }else{
+      printf("String not accepted\n");
+      return;}
 }

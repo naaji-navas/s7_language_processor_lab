@@ -35,11 +35,10 @@ void main(){
       break;
     }
 
-    if (state == 3) {
-      printf("String accepted\n");
-      return;
-    }
+    
     
   }
+  if (state == 3) printf("String accepted\n");
+  else
   printf("String not accepted\n");
 }
