@@ -1,3 +1,8 @@
+// Najid Navas
+// CS B
+// Roll no 63
+
+// Write a program to count the number of characters, words and lines in a given input file.
 %{
 	#include <stdio.h>
 	#include <ctype.h>
@@ -41,3 +46,14 @@ int main(int argc ,  char *argv[]){
 	fclose(inputFile);
 	return 0;
 }
+// sample input and output
+
+Input: 
+Hello, world!
+This is a test file.
+It contains three lines.
+
+Output: 
+Characters count 50
+Word count 9
+line_count 3

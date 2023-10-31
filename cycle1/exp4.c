@@ -1,3 +1,8 @@
+// Najid Navas
+// CS B
+// Roll no 63
+// exp no 4
+
 // c program for implenting a dfa for accepting strings from the set {a,b,c} having abc as substring
 
 #include<stdio.h>
@@ -42,3 +47,23 @@ void main(){
   else
   printf("String not accepted\n");
 }
+
+/*
+Input: abca
+Output: String accepted
+
+Input: abcabc
+Output: String accepted
+
+Input: ab
+Output: String not accepted
+
+Input: abc
+Output: String accepted
+
+Input: aabc
+Output: String accepted
+
+Input: bca
+Output: String not accepted
+*/

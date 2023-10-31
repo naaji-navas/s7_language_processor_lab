@@ -1,3 +1,8 @@
+// Najid Navas
+// CS B
+// Roll no 63
+// exp no 3
+
 // c program for implenting a dfa for accepting the binary string ending with 00
 
 #include<stdio.h>
@@ -40,3 +45,12 @@ void main(){
       printf("String not accepted\n");
       return;}
 }
+
+// sample output
+
+// Enter a string to test: 100
+// String  accepted
+// Enter a string to test: 1000
+// String accepted
+// Enter a string to test: 1001
+// String not accepted

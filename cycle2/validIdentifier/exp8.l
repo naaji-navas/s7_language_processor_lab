@@ -1,3 +1,10 @@
+// Najid Navas
+// CS B
+// Roll no 63
+
+// Write a lex program to check whether the given identifier is valid or not.
+
+
 %{
 #include<stdio.h>
 %}
@@ -23,3 +30,17 @@ int main(){
 	yylex();
 	return 0;
 }
+
+// sample input and output
+// Enter the identifer: 123
+// Invalid Identifier
+
+// Enter the identifer: 123abc
+// Invalid Identifier
+
+// Enter the identifer: abc123
+// Valid Identifier
+
+// Enter the identifer: abc_123
+// Valid Identifier
+

@@ -1,3 +1,8 @@
+// Najid Navas
+// CS B
+// Roll no 63
+// exp no 5
+
 // c program to implement a dfa for testing whether an input string is a valid identifier or not
 
 #include <ctype.h>
@@ -48,3 +53,25 @@ void main(){
     return;
   }
 }
+
+// sample output
+/*
+Input: _abc
+Output: String accepted
+
+Input: 123abc
+Output: String not accepted
+
+Input: abc123
+Output: String accepted
+
+Input: abc_123
+Output: String accepted
+
+Input: abc
+Output: String accepted
+
+Input: auto
+Output: String not accepted
+*/
+

@@ -1,3 +1,10 @@
+// Najid Navas
+// CS B
+// Roll no 63
+// exp no 2
+
+// Write a program to count the number of vowels and consonants in a string using Lex.
+
 %{
 int vowelCount = 0;
 int consonantCount = 0;

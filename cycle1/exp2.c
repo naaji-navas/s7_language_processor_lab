@@ -1,3 +1,11 @@
+// Najid Navas
+// CS B
+// Roll no 63
+// exp no 2
+
+// program to check if a string contains substring 00
+
+
 #include <stdio.h>
 
 #define MAX 100
@@ -33,3 +41,12 @@ void main() {
 
   printf("String not accepted\n");
 }
+
+/*
+Enter a string to test: 101010
+String not accepted
+Enter a string to test: 1001
+String accepted
+
+
+/*/
